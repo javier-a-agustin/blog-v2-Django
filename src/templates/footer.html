@@ -1,0 +1,43 @@
+{% load static %}
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            
+          </div>
+          <div class="col-md-4">
+            <div class="menus d-flex">
+              <ul class="list-unstyled">
+                <li> <a href="{% url 'post-list' %}">Articulos</a></li>
+                <li> <a target='blank' href="https://www.linkedin.com/in/javier-a-agustin/">LinkedIn</a></li>
+                <li> <a href="https://github.com/javier-a-agustin" target='blank'>Github</a></li>
+                {% comment %} <li> <a href="#">Privacy &amp; Policy</a></li> {% endcomment %}
+              </ul>
+              <ul class="list-unstyled">
+                <li> <a href="{% url 'about' %}">Acerca</a></li>
+                <li> <a href="https://javier-a-agustin.github.io/Javier-Fernandez-w/" target='blank'>Portfolio</a></li>
+                {% comment %} <li> <a href="#">How It Works</a></li>
+                <li> <a href="#">Contact</a></li> {% endcomment %}
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            
+        </div>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2020. Todos los derechos reservados. Gauchada.</p>
+            </div>
+            <div class="col-md-6 text-right">
+              {% comment %} <p>Template By <a href="https://bootstrapious.com/p/bootstrap-carousel" class="text-white">Bootstrapious</a>
+                <!-- Please do not remove the backlink to Bootstrap Temple unless you purchase an attribution-free license @ Bootstrap Temple or support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)                         -->
+              </p> {% endcomment %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>

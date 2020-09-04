@@ -1,0 +1,14 @@
+{% extends 'base_tmpl.html' %}
+
+{% load static %}
+{% block content %}
+    <div class='container'>
+        <h1>Resultados</h1>
+
+        {% for post in queryset%}
+            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                    
+        {% endfor %}
+    </div>
+
+{% endblock content %}

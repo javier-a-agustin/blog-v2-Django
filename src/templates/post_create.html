@@ -1,0 +1,21 @@
+{% extends 'base_tmpl.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+    <div class='container mb-5 mt-5'>
+        <h2>{{ title }}</h2>
+        {{ form.media }}
+        <form method='POST' action='.' enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{ form|crispy }}  
+           
+            {% comment %} {{ form|crispy }} {% endcomment %}
+            <button class='btn btn-dark' type='submit'>Crear</button>
+        </form>
+    </div>
+    
+
+{% endblock content%}
