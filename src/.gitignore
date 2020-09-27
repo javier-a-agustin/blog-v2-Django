@@ -1,0 +1,4 @@
+staticfiles
+mediafiles
+db.sqlite3
+admin
